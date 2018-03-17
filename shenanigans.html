@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: 'Kaiso'; src: url("Kaiso-Next-B.otf"); }
+@font-face { font-family: 'NotoSans'; src: url("NotoSansaCJK-Regular.tcc"); }
+</style>
+</head>
+<body>
+<div style="height:494px;width:494px;writing-mode:tb-rl;color:#006378;font-family:Kaiso;font-style:normal;font-variant:normal;font-stretch:normal;">
+<span style="font-weight:300;font-size:246.25px;line-height:100%;letter-spacing:0px;word-spacing:0px;">多趣味<span><span style="font-family:NotoSans;font-weight:500;font-stretch:normal;font-size:156.25px;line-height:100%;letter-spacing:0px;word-spacing:0px;display:inline-block;position:relative;top:46px;left:-2.5px;" id='maru'></span>
+</div>
+<div style="height: 494px; width: 494px; position: relative; top: -494px;">
+<svg viewBox="0 0 494 494" height="494" width="494">
+  <g>
+    <path id="maru" d="m 122.75571,292.40407 c 41.70264,0 75.75569,34.79333 75.75569,77.72979 0,42.93646 -34.05305,77.72983 -75.75569,77.72983 C 81.053058,447.86369 47,413.07032 47,370.13386 47,327.1974 81.053058,292.40407 122.75571,292.40407 Z m 0,135.71872 c 30.84514,0 56.01479,-25.90996 56.01479,-57.98893 0,-32.07896 -25.16965,-57.98889 -56.01479,-57.98889 -30.845157,0 -56.014805,25.90993 -56.014805,57.98889 0,32.07897 25.169648,57.98893 56.014805,57.98893 z" style="fill:#006378;fill-opacity:1;" />
+  </g>
+</svg>
+<div>
+<script>
+// var kakomimoji_str = '〶㉄㉅㉆㉇㊀㊁㊂㊃㊄㊅㊆㊇㊈㊉㊊㊋㊌㊍㊎㊏㊐㊑㊒㊓㊔㊕㊖㊗㊘㊙㊚㊛㊜㊝㊞㊟㊠㊡㊢㊣㊤㊥㊦㊧㊨㊩㊪㊫㊬㊭㊮㊯㊰';
+var kakomimoji_str = '〶 ㊑ ㊒ ㊕ ㊗ ㊙ ㊞ ㊟ ㊢ ㊣ ';
+var maru = document.querySelector('#maru');
+window.moji_idx = 0
+setInterval(function(){ maru.innerHTML = kakomimoji_str[window.moji_idx]; window.moji_idx = ((window.moji_idx + 1) % kakomimoji_str.length); }, 1000);
+</script>
+</body>
+</html>
